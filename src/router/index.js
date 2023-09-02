@@ -15,9 +15,9 @@ const router = createRouter({
       component: () => import('../views/RegistrationView.vue')
     },
     {
-      path: '/success',
-      name: 'success',
-      component: () => import('../views/SuccessView.vue')
+      path: '/ending',
+      name: 'ending',
+      component: () => import('../views/EndingView.vue')
     }
   ]
 })

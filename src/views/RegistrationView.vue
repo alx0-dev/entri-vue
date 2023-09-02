@@ -10,7 +10,7 @@ const router = useRouter()
   <div>
     <h3>Please enter your details:</h3>
     <RegistrationForm />
-    <Button label="Continue" @click="router.push({ path: '/success', replace: true })" />
+    <Button label="Continue" @click="router.push({ path: '/ending', replace: true })" outlined />
   </div>
 </template>
 

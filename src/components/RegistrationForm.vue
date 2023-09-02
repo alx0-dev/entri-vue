@@ -6,15 +6,15 @@ import { Icon } from '@iconify/vue'
 <template>
   <div>
     <div class="reg-input p-input-icon-left">
-      <Icon icon="noto-v1:party-popper" />
+      <Icon icon="carbon:person" />
       <InputText placeholder="First Name" />
     </div>
     <div class="reg-input p-input-icon-left">
-      <Icon icon="noto-v1:party-popper" />
+      <Icon icon="carbon:person" />
       <InputText placeholder="Last Name" />
     </div>
     <div class="reg-input p-input-icon-left">
-      <Icon icon="noto-v1:party-popper" />
+      <Icon icon="carbon:phone" />
       <InputText placeholder="Contact Number" />
     </div>
   </div>

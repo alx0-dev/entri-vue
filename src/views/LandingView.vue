@@ -12,7 +12,7 @@ const router = useRouter()
       <h1>ACME CORP</h1>
     </div>
 
-    <Button label="Enter" @click="router.push({ path: '/registration', replace: true })" />
+    <Button label="Enter" @click="router.push({ path: '/registration', replace: true })" outlined />
   </main>
 </template>
 
