@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "uid": "data",
+    "companyName": "ACME CORP.",
+    "companyOffice": "Los Angeles Headquarters",
+    "visitorRegistration": [
+      {
+        "inputName": "First Name",
+        "inputType": "A",
+        "required": true
+      },
+      {
+        "inputName": "Last Name",
+        "inputType": "A",
+        "required": true
+      },
+      {
+        "inputName": "Email Address",
+        "inputType": "ANS",
+        "required": true
+      }
+    ],
+    "NDA": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis, libero consectetur lobortis posuere, neque eros maximus elit, id dictum massa sapien ac quam. Nam scelerisque augue a blandit sagittis. Nunc euismod rutrum felis sit amet blandit. Nam nec eros elementum, laoreet diam quis, interdum mi. Mauris quis pellentesque lorem. Praesent vitae velit nunc. Cras accumsan, ante id mollis blandit, justo elit euismod leo, in molestie neque neque a libero. Aliquam lorem augue, dignissim a commodo nec, ultrices ac nunc. In in varius elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et elementum velit. Integer sollicitudin nec enim eget tempor. Sed vestibulum suscipit diam, a pretium sem maximus et. Vestibulum nec enim imperdiet est efficitur placerat. Integer ipsum ipsum, vehicula eget enim eget, cursus luctus sapien. <br /> <br />Nullam gravida est ut consectetur rutrum. Morbi pretium augue sit amet pretium sollicitudin. Phasellus tristique ex sit amet sapien vestibulum, vel fermentum ante vestibulum. Cras vehicula consequat rutrum. Sed pellentesque, risus eu viverra laoreet, massa lacus mollis mauris, id varius lorem justo in dolor. Vivamus lacinia elit libero, vel convallis massa congue eu. Pellentesque sapien est, interdum sit amet placerat sed, rhoncus quis metus. Mauris tincidunt interdum purus, varius fringilla velit condimentum ut. Vivamus finibus dapibus consectetur. Nam id quam lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+]

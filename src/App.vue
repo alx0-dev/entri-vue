@@ -1,12 +1,21 @@
 <script setup>
-import { computed } from 'vue'
-import { RouterView, useRouter } from 'vue-router'
+import { RouterView } from 'vue-router'
 import CompanyHeader from './components/CompanyHeader.vue'
+import EntriFooter from './components/EntriFooter.vue'
+import { navigationHelper } from './helpers/navigationHelper.js'
+import { useEntriStore } from './stores/entri'
 
-const router = useRouter()
-const isLandingView = computed(() => router.currentRoute.value.path === '/')
+// http://localhost:5173/?uid=data
 
-router.push({ path: '/', replace: true })
+const store = useEntriStore()
+const uid = navigationHelper.getUid()
+
+if (uid) {
+  store.uid = uid
+  store.config = navigationHelper.fetchConfig(uid)
+} else {
+  console.log('no uid found')
+}
 </script>
 
 <template>
@@ -14,7 +23,7 @@ router.push({ path: '/', replace: true })
     <div class="container">
       <div class="content">
         <div class="container-content">
-          <header v-if="!isLandingView">
+          <header>
             <CompanyHeader />
           </header>
           <div class="content-view">
@@ -22,6 +31,7 @@ router.push({ path: '/', replace: true })
           </div>
         </div>
       </div>
+      <EntriFooter />
     </div>
   </div>
 </template>
@@ -35,12 +45,13 @@ header {
   overflow: hidden;
   display: flex;
   position: fixed;
-  top: 10vh;
 }
 
 .container {
   min-width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
 .content {
